@@ -33,7 +33,6 @@ $(function(){
     // interact with toolbar
     $('#Themeable').on('click', 'a', function(){
         var tag = $that[0].tagName.toLowerCase();
-        console.log(classes[tag].join(' '));
         activeElement.removeClass(classes[tag].join(' ')).addClass($(this).text());
     });
     
