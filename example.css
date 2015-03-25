@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+body {
+    max-width: 700px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+    margin-left: 200px;
+}
+h1, 2h, h3, h4, h5, h6 {
+    font-family: 'PT Serif', serif;
+}
+figcaption {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'PT Serif Caption', serif;
+}
+figure {
+    text-align: center;
+}
+figure > img {
+    border: solid 1px #666;
+    padding: .3em;
+}
+figure > figcaption {
+    text-align: left;
+}
+
+/* themes */
+figure.inline > figcaption {
+    color: #999;
+}
+
+figure.aside {
+    position: absolute;
+    left: 900px;
+    width: 300px;
+}
+figure.aside > img {
+    width: 300px;
+}
+
+figure.jumbo {
+    max-width: 700px;
+    padding: 0;
+    margin: 1em 0;
+    position: relative;
+}
+figure.jumbo > * {
+    display: block;
+}
+figure.jumbo > img {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+figure.jumbo > figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    padding: 2em;
+}
+figure.jumbo:hover > figcaption {
+    opacity: 1;
+}
+
+p.special {
+    color: #900;
+    font-style: italic;
+}

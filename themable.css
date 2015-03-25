@@ -1,0 +1,46 @@
+
+/* interaction */
+[contenteditable]:focus {
+    color: #000;
+    outline: solid 2px #ccc;
+    background: #eee;
+}
+[contenteditable]:hover {
+    color: #000;
+    background: #f9f9f9;
+    background: rgba(240,240,240,0.9);
+}
+
+
+/* toolbar */
+#Themable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: top .5s, left .5s, opacity .5s;
+    background: #B1E8AF;
+    padding: 0.2em;
+    border: solid 1px #333;
+    border-radius: 5px;
+}
+#Themable > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.classSelector {
+    transition: opacity .2s;
+    opacity: .5;
+    position: absolute;
+    top: -1em;
+    left: 1em;
+}
+.classEditable {
+    position: relative;
+}
+.classEditable:hover > .classSelector,
+.classSelector:hover {
+    opacity: 1;
+}
