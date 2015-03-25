@@ -17,7 +17,7 @@ $(function(){
         moveTimer = setTimeout(function(){
             var tag = $that[0].tagName.toLowerCase();
             activeElement = $that;
-            $('#Themable').html(
+            $('#Themeable').html(
                 '<a>'+classes[tag].join('</a> <a>')+'</a>'
             );
             $('#Themeable').css({top: $that.offset().top-20, left: $that.offset().left, opacity: 1});
