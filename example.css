@@ -12,7 +12,8 @@ body {
     max-width: 700px;
     font-family: 'PT Sans', sans-serif;
     text-align: left;
-    margin-left: 200px;
+    margin: 0 0 0 200px;
+    padding: 0;
 }
 h1, 2h, h3, h4, h5, h6 {
     font-family: 'PT Serif', serif;
@@ -79,4 +80,19 @@ figure.jumbo:hover > figcaption {
 p.special {
     color: #900;
     font-style: italic;
+}
+
+/*html, body,
+h1.title {
+    height: 100%;
+}*/
+h1.title {
+    text-align: center;
+    margin: 0;
+    padding: 2em .5em;
+    font-family: 'Bangers', cursive;
+    font-size: 5em;
+    letter-spacing: .3em;
+    border: double 10px #009;
+    color: #009;
 }
